@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/rodape.css">
 </head>
 
-<body>
+<body class="bg-light">
     <!-- Barra Superior -->
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                     <a class="nav-link" href="contato.php" title="Contato"><i class="fas fa-envelope"></i> Contato</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="compras.php" title="Carrinho de Compras"><i class="fas fa-cart-plus"></i> Carrinho</a>
+                    <a class="nav-link" href="compras.php" target="_blank" title="Carrinho de Compras"><i class="fas fa-cart-plus"></i> Carrinho</a>
                 </li>
                 </li>
             </ul>

@@ -1,17 +1,6 @@
   <!-- Conexões com PHP/includes  -->
   <?php require("includes\cabecalho.php") ?>
-
-
-
-  <!-- Alert Cupom 5% OFF -->
-  <div class="alert alert-primary alert-dismissible fade show" role="alert">
-      <strong>Cupom Disponível 5% OFF</strong> Status: Aplicado
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-      </button>
-  </div>
-  <!-- Alert Cupom 5% OFF -->
-
+  
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

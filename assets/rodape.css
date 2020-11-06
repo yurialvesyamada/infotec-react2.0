@@ -1,3 +1,4 @@
+/*
 #myFooter {
     background-color: #3a3f46;
     color: white;
@@ -94,12 +95,12 @@
         text-align: center;
     }
 }
-
+*/
 
 
 /* CSS utilizado para posicionar o rodapé no final da página. */
 /* Você pode remover isso. */
-
+/*
 html {
     height: 100%;
 }
@@ -127,3 +128,16 @@ body {
 
         padding-bottom: 20px;
  }
+ */
+
+ /* Rodapé */
+
+ .link-white li a {
+
+    color: white;
+}
+
+.link-white ul {
+    list-style-type: none;
+    padding-left: 0;
+}
