@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/estilos.css">
-    <link rel="stylesheet" href="assets/rodape.css">
 </head>
 
 <body class="bg-light">
@@ -34,7 +33,7 @@
                     <a class="nav-link" href="produtos.php" title="Produtos"> <i class="fas fa-laptop"></i> Produtos</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="loja.php" title="Nossa Loja"><i class="fas fa-store"></i> Nossa Loja</a>
+                    <a class="nav-link" href="loja.php" title="Nossa Loja"><i class="fas fa-store"></i> Unidades</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="contato.php" title="Contato"><i class="fas fa-envelope"></i> Contato</a>
@@ -51,5 +50,3 @@
         </div>
     </nav>
     <!-- Fim de Barra Superior -->
-
-   

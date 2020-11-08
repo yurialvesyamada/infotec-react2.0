@@ -2,7 +2,7 @@
 <?php require("includes\cabecalho.php") ?>
 
 <div class="container-fluid text-center">
-  <h2 class="bg-light text-info text-center">Produtos</h2>
+  <h2 class="display-4 bg-light text-info">Produtos</h2>
   <div class="row">
     <?php for ($i = 0; $i < 10; $i++) { ?>
       <div class="card shadow bg-white rounded col-12 col-md-6 col-lg-3">
