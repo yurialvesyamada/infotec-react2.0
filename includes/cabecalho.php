@@ -33,7 +33,7 @@
                     <a class="nav-link" href="produtos.php" title="Produtos"> <i class="fas fa-laptop"></i> Produtos</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="loja.php" title="Nossa Loja"><i class="fas fa-store"></i> Unidades</a>
+                    <a class="nav-link" href="loja.php" title="Nossa Loja"><i class="fas fa-store"></i> Nossas Lojas</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="contato.php" title="Contato"><i class="fas fa-envelope"></i> Contato</a>

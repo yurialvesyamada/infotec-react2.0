@@ -20,7 +20,7 @@
                     <h5 class="pb-2">Sobre Nós</h5>
                     <ul>
                         <li><a href="loja.php">Nossas Lojas</a></li>
-                        <li><a href="contato.php">Contato</a></li>
+                        <li><a href="contato.php">Fale Conosco</a></li>
                         <li><a href="#">Parceiros</a></li>
                     </ul>
                 </div>

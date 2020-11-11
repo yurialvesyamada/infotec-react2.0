@@ -2,7 +2,7 @@
 <?php require("includes\cabecalho.php") ?>
 
 
-<div class="container-fluid text-center mb-5">
+<div class="container-fluid text-center mb-5 shadow-sm p-3 bg-light rounded">
     <h2 class="display-4 bg-light text-info my-4">Nossas Lojas</h2>
     <table class="table">
         <thead class="thead-dark">
