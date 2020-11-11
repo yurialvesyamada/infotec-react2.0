@@ -1,5 +1,6 @@
 <!-- Conexões com PHP/includes  -->
-<?php require("includes\cabecalho.php") ?>
+<?php require("includes/cabecalho.php") ?>
+<?php require("includes/conexao.php") ?>
 
 <div class="display-4 text-center text-info my-3">Categorias</div>
 
