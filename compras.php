@@ -1,5 +1,7 @@
 <!-- Conexões com PHP/includes  -->
 <?php require("includes\cabecalho.php") ?>
+<?php require("includes/conexao.php") ?>
+
 <div class="container-fluid py-4">
     <div class="row mb-4">
         <div class="col-lg-8 mx-auto text-center">

@@ -1,5 +1,6 @@
 <!-- Conexões com PHP/includes  -->
 <?php require("includes\cabecalho.php") ?>
+<?php require("includes/conexao.php") ?>
 
 
 <div class="container-fluid text-center mb-4 shadow-sm  bg-light rounded">
