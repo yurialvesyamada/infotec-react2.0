@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <h2 class="logo"><a href="" title="© 2020 Copyright InfoTec">
-                            <img src="assets/img/logo_vermelho.png" alt="" width="120px"></a>
+                            <img src="assets/img/logo_vermelho.png" class="rounded" alt="InfoTec" width="120px"></a>
                     </h2>
                 </div>
                 <div class="col-sm-3">
@@ -21,7 +21,7 @@
                     <ul>
                         <li><a href="loja.php">Nossas Lojas</a></li>
                         <li><a href="contato.php">Fale Conosco</a></li>
-                        <li><a href="#">Parceiros</a></li>
+                        <li><a href="parceiros.php">Parceiros</a></li>
                     </ul>
                 </div>
 
