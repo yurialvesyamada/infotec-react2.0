@@ -90,8 +90,8 @@
         </div>
 
       </div>
-
     </div>
+
 
     <!-- Cards Produtos -->
     <div class="card-deck mx-auto w-75 h-50 text-center align-items-top shadow-sm p-3 mb-5 bg-light rounded">
@@ -103,39 +103,13 @@
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
-
-      <div class="card shadow bg-white rounded">
-        <img src="assets\img\placa-de-video-gtx.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-
-      <div class="card shadow bg-white rounded">
-        <img src="assets\img\placa-de-video-gtx.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-
-      <div class="card shadow bg-white rounded">
-        <img src="assets\img\placa-de-video-gtx.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-
     </div>
     <!-- Fim de Cards Produtos -->
 
   </div>
 </div>
+
+
 
 
 

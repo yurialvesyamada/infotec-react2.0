@@ -54,7 +54,7 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
   <button type="reset" class="btn btn-info w-25 mx-5 mt-4">Limpar</button>
   <button type="submit" class="btn btn-info w-25 mx-5 mt-4" onclick="feedback()">Enviar</button>
 </form>
-<div class="mt-4">
+<div class="mt-4 text-center text-success">
   <p id="agradecimento"></p>
 </div>
 <!-- Fim de Formulário Fale Conosco -->
@@ -91,10 +91,13 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
     </div>
   </div>
 
+  <!--  
   <div class="text-center text-info mt-5">
     <h2>Formas de Pagamento</h2>
     <img src="assets/img/pagamento_new.png" title="Formas de Pagamento">
   </div>
+  -->
 </div>
+
 <!-- Rodapé Includes -->
 <?php require("includes/rodape.php") ?>
