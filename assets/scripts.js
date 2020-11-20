@@ -1,4 +1,4 @@
-function exibir_Categoria(categoria) {
+ /* function exibir_Categoria(categoria) {
 
     let elementos = document.getElementsByClassName("produtos")
     console.log(elementos);
@@ -7,7 +7,7 @@ function exibir_Categoria(categoria) {
 
         console.log(elementos[i].id);
         if (categoria == elementos[i].id)
-            elementos[i].style = "display:block";
+            elementos[i].style = "display:flex";
         else
             elementos[i].style = "display:none";
     }
@@ -18,7 +18,7 @@ let exibir_todos = () => {
     let elementos = document.getElementsByClassName("produtos")
 
     for (var i = 0; i < elementos.length; i++) {
-        elementos[i].style = "display:block";
+        elementos[i].style = "display:flex";
 
 
     }
@@ -26,10 +26,13 @@ let exibir_todos = () => {
 
 };
 
-
+*/
 
 /* Feedback Botão Enviar */
 
 function feedback() {
     document.getElementById("agradecimento").innerHTML = "Agradeçemos pelo Feedback!";
 }
+
+
+
