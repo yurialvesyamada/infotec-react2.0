@@ -92,40 +92,45 @@
       </div>
     </div>
 
-    <?php
-    $sql = "SELECT * FROM produto";
-    $result = $conn->query($sql);
+    <div class="col-sm-8 col-md-9">
+      <div class="row ml-4">
 
-    if ($result->num_rows > 0) {
-      // output data of each row
-      while ($row = $result->fetch_assoc()) {
+        <?php
+        $sql = "SELECT * FROM produto";
+        $result = $conn->query($sql);
 
-    ?>
+        if ($result->num_rows > 0) {
+          // output data of each row
+          while ($row = $result->fetch_assoc()) {
+
+        ?>
 
 
-        <!-- Cards Produtos -->
-        <div class="card-deck mx-auto w-25 h-50 text-center align-items-top shadow-sm p-2 mb-5 bg-light rounded">
-          <div class="produtos" id="<?php echo $row["categoria"]; ?>">
-            <div class="card shadow bg-white rounded">
-              <img src="<?php echo $row["imagem"]; ?>" class="card-img-top w-75 my-2" alt="...">
-              <div class="card-body">
-                <h5 class="card-text"> <img src="assets\img\stars1.png" width="90px"> </h5>
-                <p class="card-text"><?php echo $row["descricao"]; ?></p>
-                <p class="card-text"><small class="text-muted h6">R$ <del><?php echo $row["valor_sem_desconto"]; ?><del></small></p>
-                <p class="card-text"><small class="text-danger h4">R$<?php echo $row["valor_com_desconto"]; ?></small></p>
+            <!-- Cards Produtos -->
+            <div class="col-md-6 col-lg-3 text-center  shadow-sm p-2 mb-5 bg-light rounded">
+              <div class="produtos" id="<?php echo $row["categoria"]; ?>">
+                <div class="card shadow bg-white rounded">
+                  <img src="<?php echo $row["imagem"]; ?>" class="card-img-top w-75 my-2" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-text"> <img src="assets\img\stars1.png" width="90px"> </h5>
+                    <p class="card-text"><?php echo $row["descricao"]; ?></p>
+                    <p class="card-text"><small class="text-muted h6">R$ <del><?php echo $row["valor_sem_desconto"]; ?><del></small></p>
+                    <p class="card-text"><small class="text-danger h4">R$<?php echo $row["valor_com_desconto"]; ?></small></p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- Fim de Cards Produtos -->
+            <!-- Fim de Cards Produtos -->
 
-    <?php
-      }
-    } else {
-      echo "0 results";
-    }
-    $conn->close();
-    ?>
+        <?php
+          }
+        } else {
+          echo "0 results";
+        }
+        $conn->close();
+        ?>
+      </div>
+    </div>
 
   </div>
 </div>

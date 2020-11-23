@@ -5,26 +5,44 @@
 <div class="container-fluid py-4">
     <div class="row mb-4">
         <div class="col-lg-8 mx-auto text-center">
-            <h1 class="display-4 text-info">Dados Bancários</h1>
+            <h1 class="display-4 text-info">Pedidos</h1>
         </div>
     </div> <!-- End -->
     <div class="row">
         <div class="col-lg-6 mx-auto">
-            <div class="card ">
+            <div class="card">
                 <div class="card-header">
+                    
+                 <!--  
                     <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
-                        <!-- Credit card form tabs -->
+                       
                         <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
                             <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Cartão de Crédito </a> </li>
                             <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
                             <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Internet Banking </a> </li>
                         </ul>
-                    </div> <!-- End -->
+                    </div> -->
                     <!-- Credit card form content -->
                     <div class="tab-content">
                         <!-- credit card info-->
                         <div id="credit-card" class="tab-pane fade show active pt-3">
                             <form role="form">
+                                <div class="form-group"> <label for="name"> <h6>Nome Completo</h6>
+                                    </label> <input type="text" name="name" placeholder="Nome:" required class="form-control">
+                                </div>
+
+                                <div class="form-group"> <label for="adress"> <h6>Endereço</h6>
+                                    </label> <input type="text" name="adress" placeholder="Endereço:" required class="form-control">
+                                </div>
+
+                                <div class="form-group"> <label for="phonenumber"> <h6>Telefone</h6>
+                                    </label> <input type="text" name="phonenumber" placeholder="Telefone:" required class="form-control">
+                                </div>
+                                   
+                                <div class="form-group"> <label for="age"> <h6>Data de Nascimento</h6>
+                                    </label> <input type="number" name="age" placeholder="Data de nascimento:" required class="form-control">
+                                </div>
+                                    
                                 <div class="form-group"> <label for="username">
                                         <h6>Nome do Titular</h6>
                                     </label> <input type="text" name="username" placeholder="Nome do Titular" required class="form-control "> 
