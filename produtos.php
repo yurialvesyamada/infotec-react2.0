@@ -110,9 +110,9 @@
             <div class="col-md-6 col-lg-3 text-center  shadow-sm p-2 mb-5 bg-light rounded">
               <div class="produtos" id="<?php echo $row["categoria"]; ?>">
                 <div class="card shadow bg-white rounded">
-                  <img src="<?php echo $row["imagem"]; ?>" class="card-img-top w-75 my-2" alt="...">
+                  <img src="<?php echo $row["imagem"]; ?>" class="card-img-top w-75 my-2" alt="Imagens">
                   <div class="card-body">
-                    <h5 class="card-text"> <img src="assets\img\stars1.png" width="90px"> </h5>
+                    <h5 class="card-text"> <img src="assets\img\stars1.png" width="90px" title="Avaliações"> </h5>
                     <p class="card-text"><?php echo $row["descricao"]; ?></p>
                     <p class="card-text"><small class="text-muted h6">R$ <del><?php echo $row["valor_sem_desconto"]; ?><del></small></p>
                     <p class="card-text"><small class="text-danger h4">R$<?php echo $row["valor_com_desconto"]; ?></small></p>
@@ -129,8 +129,8 @@
         }
         $conn->close();
         ?>
-      </div>
     </div>
+   </div>
 
   </div>
 </div>

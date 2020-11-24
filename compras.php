@@ -2,55 +2,97 @@
 <?php require("includes/cabecalho.php") ?>
 <?php require("includes/conexao.php") ?>
 
-<div class="container-fluid py-4">
-    <div class="row mb-4">
-        <div class="col-lg-8 mx-auto text-center">
+<?php
+if (isset($_POST['cliente']) && isset($_POST['endereco']) && isset($_POST['telefone']) && isset($_POST['nascimento']) && isset($_POST['descricao'])) {
+
+    $cliente = $_POST['cliente'];
+    $endereco = $_POST['endereco'];
+    $telefone = $_POST['telefone'];
+    $nascimento = $_POST['nascimento'];
+    $descricao = $_POST['descricao'];
+
+    $sql = "insert into pedidos (cliente, endereco, telefone, nascimento, descricao) values ('$cliente', '$endereco', '$telefone', '$nascimento', '$descricao')";
+
+    $result = $conn->query($sql);
+}
+?>
+
+
+<div class="container-fluid text-center text-info py-4">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
             <h1 class="display-4 text-info">Pedidos</h1>
         </div>
     </div> <!-- End -->
-    <div class="row">
+    <div class="row my-4">
         <div class="col-lg-6 mx-auto">
             <div class="card">
                 <div class="card-header">
-                    
-                 <!--  
-                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
-                       
-                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
-                            <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Cartão de Crédito </a> </li>
-                            <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
-                            <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Internet Banking </a> </li>
-                        </ul>
-                    </div> -->
-                    <!-- Credit card form content -->
-                    <div class="tab-content">
+
+                    <div class="content">
                         <!-- credit card info-->
-                        <div id="credit-card" class="tab-pane fade show active pt-3">
-                            <form role="form">
-                                <div class="form-group"> <label for="name"> <h6>Nome Completo</h6>
-                                    </label> <input type="text" name="name" placeholder="Nome:" required class="form-control">
+                        <form role="form" method="POST" action="">
+
+                            <div class="form-group"> <label for="name">
+                                    <h6>Nome Completo</h6>
+                                </label> <input type="text" name="cliente" placeholder="Nome:" required class="form-control" required>
+                            </div>
+
+                            <div class="form-group"> <label for="adress">
+                                    <h6>Endereço</h6>
+                                </label> <input type="text" name="endereco" placeholder="Endereço:" required class="form-control" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"> <label for="phonenumber">
+                                            <h6>Telefone</h6>
+                                        </label> <input type="number" name="telefone" placeholder="Telefone:" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group"> <label for="age">
+                                            <h6>Data de Nascimento</h6>
+                                        </label> <input type="date" name="nascimento" placeholder="Data de nascimento:" class="form-control" required>
+                                    </div>
                                 </div>
 
-                                <div class="form-group"> <label for="adress"> <h6>Endereço</h6>
-                                    </label> <input type="text" name="adress" placeholder="Endereço:" required class="form-control">
-                                </div>
+                                <select class="custom-select mx-1 my-3" name="descricao" required>
+                                    <option selected disabled>Selecione o produto</option>
+                                    <?php
+                                    $sql = "SELECT * FROM produto";
+                                    $result = $conn->query($sql);
 
-                                <div class="form-group"> <label for="phonenumber"> <h6>Telefone</h6>
-                                    </label> <input type="text" name="phonenumber" placeholder="Telefone:" required class="form-control">
-                                </div>
-                                   
-                                <div class="form-group"> <label for="age"> <h6>Data de Nascimento</h6>
-                                    </label> <input type="number" name="age" placeholder="Data de nascimento:" required class="form-control">
-                                </div>
-                                    
+                                    if ($result->num_rows > 0) {
+                                        // output data of each row
+                                        while ($row = $result->fetch_assoc()) {
+
+                                    ?>
+                                            <option> <?php echo $row["descricao"]; ?> - R$ <?php echo $row["valor_com_desconto"]; ?></option>
+
+
+                                    <?php
+                                        }
+                                    } else {
+                                        echo "0 results";
+                                    }
+                                    $conn->close();
+                                    ?>
+                                </select>
+                            </div>
+
+
+
+                            <!--  
+                            <div id="credit-card" class="tab-pane fade show active">
+
                                 <div class="form-group"> <label for="username">
                                         <h6>Nome do Titular</h6>
-                                    </label> <input type="text" name="username" placeholder="Nome do Titular" required class="form-control "> 
+                                    </label> <input type="text" name="username" placeholder="Nome do Titular" required class="form-control" required>
                                 </div>
                                 <div class="form-group"> <label for="cardNumber">
                                         <h6>Número do Cartão</h6>
                                     </label>
-                                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="Número do Cartão" class="form-control " required>
+                                    <div class="input-group"> <input type="number" name="cardNumber" placeholder="Número do Cartão" class="form-control " required>
                                         <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
                                     </div>
                                 </div>
@@ -65,22 +107,23 @@
                                     <div class="col-sm-4">
                                         <div class="form-group mb-4"> <label data-toggle="tooltip" title="Por favor digite o CVV para prosseguir">
                                                 <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
-                                            </label> <input type="text" required class="form-control"> </div>
+                                            </label> <input type="number" required class="form-control"> </div>
                                     </div>
                                 </div>
-                                <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirmar Pagamento </button>
-                            </form>
+                                -->
+                            <div class="card-footer"> <button type="submit" class="subscribe btn btn-info btn-block shadow-sm" onclick="confirm_pedido()">Confirmar Pedido</button>
+                        </form>
+                        <div class="mt-4 text-center text-success">
+                            <p id="confirm"></p>
                         </div>
-                    </div> <!-- End -->
-                </div>
+                    </div>
+                </div> <!-- End -->
             </div>
         </div>
     </div>
 </div>
+
 </div>
-<div class="text-center text-info my-5">
-    <h2>Formas de Pagamento</h2>
-    <img src="assets/img/pagamento_new.png" title="Formas de Pagamento">
 </div>
 
 <!-- Rodapé Includes -->

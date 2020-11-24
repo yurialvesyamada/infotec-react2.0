@@ -22,7 +22,7 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
   <h6 class="display-4 py-4">Fale Conosco</h6>
   <div class="form-group">
     <label for="exampleFormControlInput1">Nome Completo</label>
-    <input type="name" name="nome" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome" required>
+    <input type="text" name="nome" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome" required>
   </div>
 
   <div class="form-group">
@@ -32,7 +32,7 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
 
   <div class="form-group">
     <label for="exampleFormControlInput2">Telefone - Celular</label>
-    <input type="telefone" name="telefone" class="form-control" id="exampleFormControlInput3" placeholder="Digite seu número" required>
+    <input type="number" name="telefone" class="form-control" id="exampleFormControlInput3" placeholder="Digite seu número" required>
   </div>
 
   <div class="form-group">
