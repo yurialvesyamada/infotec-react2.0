@@ -1,6 +1,6 @@
 <?php require("includes/cabecalho.php") ?>
 
-<div class="h1 text-center text-info py-4">Parceiros</div>
+<h1 class="text-center text-info my-4 h1">Parceiros</h1>
 
 <div class="container-fluid text-center">
     <div class="card-deck px-5 mb-5">

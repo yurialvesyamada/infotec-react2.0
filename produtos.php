@@ -2,14 +2,14 @@
 <?php require("includes/cabecalho.php") ?>
 <?php require("includes/conexao.php") ?>
 
-<div class="display-4 text-center text-info my-4">Categorias</div>
+<h1 class="text-center text-info my-4 h1">Categorias</h1>
 
 <!-- Produtos/Categorias -->
 <div class="container-fluid mb5">
   <div class="row">
     <div class="col-md-2 bg-info text-white rounded">
-      <div class="produtos p-1">
-        <h6 class="text-uppercase">Produtos</h6>
+      <div class="produtos p-2">
+        <h1 class="text-uppercase text-center">Produtos</h1>
         <div class="p-lists">
           <div class="d-flex justify-content-between mt-2">
             <span onclick="exibir_todos()">Todos</span> <span>16</span>
@@ -38,7 +38,7 @@
       <div class="content text-center">
         <div class="p-2 border-top border-light">
           <div class="heading d-flex justify-content-between align-items-center">
-            <h6 class="text-uppercase">Processadores</h6> <span>--</span>
+            <p class="text-uppercase">Processadores</p>
           </div>
 
           <div class="d-flex justify-content-between mt-2">
@@ -64,8 +64,8 @@
         </div>
         <!--  Marcas Checkbox -->
         <div class="p-2 border-top border-light">
-          <div class="heading d-flex justify-content-between align-items-center">
-            <h6 class="text-uppercase">Marcas</h6> <span>--</span>
+          <div class="heading d-flex justify-content-between">
+            <p class="text-uppercase">Marcas</p>
           </div>
 
           <div class="d-flex justify-content-between mt-2">
@@ -112,10 +112,10 @@
                 <div class="card shadow bg-white rounded">
                   <img src="<?php echo $row["imagem"]; ?>" class="card-img-top w-75 my-2" alt="Imagens">
                   <div class="card-body">
-                    <h5 class="card-text"> <img src="assets\img\stars1.png" width="90px" title="Avaliações"> </h5>
+                    <h5 class="card-text"> <img src="assets\img\stars1.png" width="120px" title="Avaliações"> </h5>
                     <p class="card-text"><?php echo $row["descricao"]; ?></p>
-                    <p class="card-text"><small class="text-muted h6">R$ <del><?php echo $row["valor_sem_desconto"]; ?><del></small></p>
-                    <p class="card-text"><small class="text-danger h4">R$<?php echo $row["valor_com_desconto"]; ?></small></p>
+                    <p class="card-text"><small class="text-danger h6">R$ <del><?php echo $row["preco"]; ?><del></small></p>
+                    <p class="card-text"><small class="text-info h3">R$ <?php echo $row["preco_final"]; ?></small></p>
                   </div>
                 </div>
               </div>

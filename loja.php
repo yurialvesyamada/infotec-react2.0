@@ -4,7 +4,8 @@
 
 
 <div class="container-fluid text-center mb-4 shadow-sm  bg-light rounded">
-    <h2 class="display-4 bg-light text-info my-4">Conheça Já</h2>
+    <h1 class="text-center text-info my-4 h1">Conheça Já</h1>
+
     <table class="table">
         <thead class="thead-dark">
             <tr>

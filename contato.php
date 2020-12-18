@@ -19,23 +19,24 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
 
 <!-- Formulário Fale Conosco -->
 <form class="container w-50 text-center text-info" method="POST" action="">
-  <h6 class="display-4 py-4">Fale Conosco</h6>
-  <div class="form-group">
+  <h1 class="text-center text-info my-4 h1">Fale Conosco</h1>
+
+  <p class="form-group">
     <label for="exampleFormControlInput1">Nome Completo</label>
     <input type="text" name="nome" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome" required>
-  </div>
+  </p>
 
-  <div class="form-group">
+  <p class="form-group">
     <label for="exampleFormControlInput2">E-mail</label>
     <input type="email" name="email" class="form-control" id="exampleFormControlInput2" placeholder="nome@exemplo.com" required>
-  </div>
+  </p>
 
-  <div class="form-group">
+  <p class="form-group">
     <label for="exampleFormControlInput2">Telefone - Celular</label>
     <input type="number" name="telefone" class="form-control" id="exampleFormControlInput3" placeholder="Digite seu número" required>
-  </div>
+  </p>
 
-  <div class="form-group">
+  <p class="form-group">
     <label for="exampleFormControlSelect1">Temas</label>
     <select class="form-control" name="tema" id="exampleFormControlSelect1" required>
       <option selected disabled>Selecione um tema</option>
@@ -45,14 +46,16 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
       <option>Compras</option>
       <option>Outros</option>
     </select>
-  </div>
+  </p>
 
-  <div class="form-group">
+  <p class="form-group">
     <label for="exampleFormControlTextarea1">Escreva aqui</label>
     <textarea class="form-control" name="mensagem" id="exampleFormControlTextarea1" rows="3" required></textarea>
-  </div>
+  </p>
+  <p>
   <button type="reset" class="btn btn-info w-25 mx-5 mt-4">Limpar</button>
   <button type="submit" class="btn btn-info w-25 mx-5 mt-4" onclick="feedback()">Enviar</button>
+  </p>
 </form>
 <div class="mt-4 text-center text-success">
   <p id="agradecimento"></p>
