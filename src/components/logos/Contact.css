@@ -1,0 +1,12 @@
+.styles img {
+    width: 100px;
+    
+}
+
+
+ .links {
+    list-style-type: none;
+    color: black;
+    font-family:serif;
+    font-size: 18px;
+}
