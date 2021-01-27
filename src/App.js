@@ -1,10 +1,21 @@
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello, World</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <Routes />
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
 export default App;
+
