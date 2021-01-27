@@ -1,5 +1,25 @@
-export default function Home() {
-    return(
-        <h1>Teste</h1>
-    )
-}
+import { Container, Row, Col } from 'react-bootstrap';
+import Produtos from '../../components/produto/Produtos_api';
+
+export default function Produtos_api() {
+
+    return (
+
+        <>
+            <Container fluid>
+                <p className="text-center text-info h1 my-4">Produtos</p>
+                <Row className="mr-4">
+                    <Col lg={3}>
+                        {/* <Categorias /> */}
+                    </Col>
+                    <Col lg={9}>
+                        <Produtos />
+                    </Col>
+                </Row>
+                <Row>
+                    {/* <Pagamento /> */}
+                </Row>
+            </Container>
+        </>
+    );
+}   
