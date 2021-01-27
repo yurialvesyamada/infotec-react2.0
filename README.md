@@ -1,6 +1,6 @@
-  Entrega do Projeto Prático Individual de Node JS
-Olá, Cavaleiro(a) Jedi,
-A sua missão neste conteúdo será:
+ # Entrega do Projeto Prático Individual de Node JS
+## Olá, Cavaleiro(a) Jedi,
+## A sua missão neste conteúdo será:
 
 Configurar um servidor HTTP com Node.Js
 Realizar a conexão com o banco de dados
