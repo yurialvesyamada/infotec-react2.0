@@ -2,9 +2,9 @@
 
 ## Olá, estudante. 
 
-### Após estudar o conteúdo desta disciplina você deverá realizar a Reestruturação do projeto inicial com uso de classes do Bootstrap. 
+#### Após estudar o conteúdo desta disciplina você deverá realizar a Reestruturação do projeto inicial com uso de classes do Bootstrap. 
 
-### Requisitos da aplicação: 
+#### Requisitos da aplicação: 
 
 Criação da estrutura inicial do projeto em container. 
 
