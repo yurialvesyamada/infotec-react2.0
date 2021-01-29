@@ -1,7 +1,7 @@
   <!-- Conexões com PHP/includes  -->
   <?php require("includes/cabecalho.php") ?>
   <?php require("includes/conexao.php") ?>
-  
+
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -11,16 +11,16 @@
       </ol>
       <div class="carousel-inner">
           <div class="carousel-item active">
-              <img src="assets/img/i9 back.jpg" class="d-block w-100" alt="Core i9">
+              <img src="img/i9 back.jpg" class="d-block w-100" alt="Core i9">
           </div>
           <div class="carousel-item">
-              <img src="assets/img/card.jpg" class="d-block w-100" alt="Processadores">
+              <img src="img/card.jpg" class="d-block w-100" alt="Processadores">
           </div>
           <div class="carousel-item">
-              <img src="assets/img/back_amd.jpg" class="d-block w-100" alt="AMD Ryzen">
+              <img src="img/back_amd.jpg" class="d-block w-100" alt="AMD Ryzen">
           </div>
           <div class="carousel-item">
-              <img src="assets/img/news_banner.png" class="d-block w-100" alt="Intel Power">
+              <img src="img/news_banner.png" class="d-block w-100" alt="Intel Power">
           </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -21,7 +21,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="index.php">
-            <img src="assets\img\logo_vermelho.png" alt="Logo" width="40px">
+            <img src="img/logo_vermelho.png" alt="Logo" width="60px" class="shadow bg-light rounded">
         </a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -43,10 +43,6 @@
                 </li>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Ex: Notebook" aria-label="Search">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
         </div>
     </nav>
     <!-- Fim de Barra Superior -->

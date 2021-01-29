@@ -2,10 +2,10 @@
 
     <footer class="bg-info text-light link-white py-5">
         <div class="container px-5">
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-sm-3">
-                    <h2 class="logo"><a href="" title="© 2020 Copyright InfoTec">
-                            <img src="assets/img/logo_vermelho.png" class="rounded" alt="InfoTec" width="120px"></a>
+                    <h2 class="logo"><a href="index.php" title="© 2020 Copyright InfoTec">
+                            <img src="img/logo_vermelho.png" class="shadow-sm bg-light rounded" alt="InfoTec" width="140px"></a>
                     </h2>
                 </div>
                 <div class="col-sm-3">
@@ -37,7 +37,7 @@
 
     </footer>
     <div class="text-center bg-dark text-white py-2">
-        <div>© 2020 Copyright InfoTec</div>
+        <div>© 2020 Copyright</div>
     </div>
 </div>
 

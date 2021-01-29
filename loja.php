@@ -3,10 +3,10 @@
 <?php require("includes/conexao.php") ?>
 
 
-<div class="container-fluid text-center mb-4 shadow-sm  bg-light rounded">
-    <h1 class="text-center text-info my-4 h1">Conheça Já</h1>
+<div class="container text-center mb-4 bg-light">
+    <h1 class="text-info my-4 h1">Conheça Já</h1>
 
-    <table class="table">
+    <table class="table shadow-sm rounded" style="font-family: 'Times New Roman', Times, serif;">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Cidade</th>
@@ -45,11 +45,11 @@
     </table>
 
 </div>
-
 <div class="text-center text-info my-5">
     <h2>Formas de Pagamento</h2>
-    <img src="assets/img/pagamento_new.png" title="Formas de Pagamento">
+    <img src="img/pagamento_new.png" title="Formas de Pagamento">
 </div>
+
 
 
 <!-- Rodapé Includes -->

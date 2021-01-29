@@ -70,36 +70,30 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
   <div class="row mx-3">
     <div class="col">
       <h5 class="logo"><a href="" title="© 2020 Copyright InfoTec">
-          <img src="assets/img/email-logo2.png" alt="Email InfoTec" width="100px"></a>
+          <img src="img/email-logo2.png" alt="Email InfoTec" width="100px"></a>
         <p class="my-2">lojas@infotec.com</p>
       </h5>
     </div>
     <div class="col">
       <h5 class="logo"><a href="" title="© 2020 Copyright InfoTec">
-          <img src="assets/img/instagram_transparent2.jpg" alt="Instagram InfoTec" width="100px"></a>
+          <img src="img/instagram_transparent2.jpg" alt="Instagram InfoTec" width="100px"></a>
         <p class="my-2">@InfoTec</p>
       </h5>
     </div>
     <div class="col">
       <h5 class="logo"><a href="https://web.whatsapp.com/" target="_blank" title="© 2020 Copyright InfoTec">
-          <img src="assets/img/wpp_transparent.png" alt="WhatsApp InfoTec" width="100px"></a>
+          <img src="img/wpp_transparent.png" alt="WhatsApp InfoTec" width="100px"></a>
         <p class="my-2">(11) 94875-6799</p>
       </h5>
     </div>
     <div class="col">
       <h5 class="logo"><a href="" title="© 2020 Copyright InfoTec">
-          <img src="assets/img/facebook-logo.png" alt="Facebook InfoTec" width="100px"></a>
+          <img src="img/facebook-logo.png" alt="Facebook InfoTec" width="100px"></a>
         <p class="my-2">InfoTec</p>
       </h5>
     </div>
   </div>
 
-  <!--  
-  <div class="text-center text-info mt-5">
-    <h2>Formas de Pagamento</h2>
-    <img src="assets/img/pagamento_new.png" title="Formas de Pagamento">
-  </div>
-  -->
 </div>
 
 <!-- Rodapé Includes -->
