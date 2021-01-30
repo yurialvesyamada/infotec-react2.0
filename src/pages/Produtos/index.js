@@ -10,11 +10,11 @@ export default function Produtos_api() {
         <>
             <Container fluid>
                 <p className="text-center text-info h1 my-4">Produtos</p>
-                <Row className="mr-4">
-                    <Col lg={3}>
+                <Row>
+                    <Col lg={2}>
                         <Categorias />
                     </Col>
-                    <Col lg={9}>
+                    <Col lg={10} className="px-5">
                         <Produtos />
                     </Col>
                 </Row>

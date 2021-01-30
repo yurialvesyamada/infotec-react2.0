@@ -11,7 +11,7 @@ export default function Cards(props) {
 
             <Col sm={12} md={6} lg={3} className="text-center shadow-sm p-2 mb-5 bg-light rounded">
 
-                <div className={props.categoria}>
+                <div>
                     <Card className="shadow bg-white rounded">
                         <img src={require(`../../../src/assets/img/${props.imagem}`).default} alt="Imagem de Produtos" className="card-img-top w-75 my-2" title={props.nome} />
                         <Card.Body>
