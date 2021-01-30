@@ -1,4 +1,4 @@
-import { Col, Card } from 'react-bootstrap';
+import { Col, Card, Button } from 'react-bootstrap';
 import './Produto.css';
 import stars from '../../assets/img/avaliacoes.png';
 
@@ -11,9 +11,9 @@ export default function Cards(props) {
 
             <Col sm={12} md={6} lg={3} className="text-center shadow-sm p-2 mb-5 bg-light rounded">
 
-                <div className={props.categoria + " produto "}>
+                <div className={props.categoria}>
                     <Card className="shadow bg-white rounded">
-                        <img src={require(`../../../src/assets/img/${props.imagem}`).default} alt="Imagem de Produtos" className="card-img-top w-75 my-2" />
+                        <img src={require(`../../../src/assets/img/${props.imagem}`).default} alt="Imagem de Produtos" className="card-img-top w-75 my-2" title={props.nome} />
                         <Card.Body>
 
                             <img src={stars} title="Conferir avaliações" className="w-50 mb-3" />
@@ -28,7 +28,9 @@ export default function Cards(props) {
                                 R$ {props.preco_final}
                             </p>
 
+                            <Button className="btn-block my-3 shadow-sm" variant="outline-info" href="/pedidos"><i className="fas fa-shopping-cart"></i> Comprar</Button>
                         </Card.Body>
+
 
                     </Card>
 
