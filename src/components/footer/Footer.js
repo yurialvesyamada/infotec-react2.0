@@ -42,7 +42,9 @@ export default function Footer() {
                                 <li>
                                     <a href="/faleconosco">Fale Conosco</a>
                                 </li>
-                                <li title="Em breve">Parceiros</li>
+                                <li>
+                                    <a href="/parceiros">Parceiros</a>
+                                </li>
                             </ul>
                         </Col>
 
@@ -61,7 +63,7 @@ export default function Footer() {
                 </Container>
             </footer>
             <div className="bg-dark text-center text-white py-2 font" title="&copy; 2020 InfoTec">
-                 &copy; 2020 InfoTec
+                &copy; 2020 InfoTec
             </div>
         </>
 

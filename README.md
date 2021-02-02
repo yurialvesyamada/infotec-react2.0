@@ -1,4 +1,4 @@
-# InfoTec 
+# InfoTec
 
 ## Entrega do Projeto Prático Individual de React.JS Back Intermediário
 
