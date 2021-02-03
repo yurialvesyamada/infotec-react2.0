@@ -1,0 +1,4 @@
+export const ESTOQUE = 'ESTOQUE';
+
+
+/* ESTOQUE = BUY_ICECREAM*/

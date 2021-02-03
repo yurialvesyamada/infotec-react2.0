@@ -1,11 +1,18 @@
 import { combineReducers } from 'redux';
-import cakeReducer from './cake/cakeReducer';
-import iceCreamReducer from './iceCream/iceCreamReducer';
+import productReducer from './produtos/productsReducer';
+import estoqueReducer from './estoque/estoqueReducer';
 
 const rootReducer = combineReducers({
-    cake: cakeReducer,
-    iceCream: iceCreamReducer
+    buyProducts: productReducer,
+    estoque: estoqueReducer
 })
 
 
 export default rootReducer;
+
+
+
+/* cakeReducer = productReducer 
+  iceCreamReducer  = estoqueReducer
+
+*/
