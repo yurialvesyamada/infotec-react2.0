@@ -2,12 +2,12 @@
 import { Component } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import '../footer/Footer.css';
-
 import { Provider } from 'react-redux';
 import store from '../../redux/store';
 import CakeContainer from '../CakeContainer';
 import HooksProductsContainer from '../HooksProductsContainer';
 import EstoqueContainer from '../EstoqueContainer';
+
 
 
 class FormPedidos extends Component {
@@ -41,13 +41,8 @@ class FormPedidos extends Component {
                             </Form.Control>
                         </Form.Group>
 
-                        <Form.Group controlId="exampleForm.ControlInput5" className="h5">
-                            <Form.Label>Quantidade</Form.Label>
-                            <Form.Control type="number" placeholder="Quantidade" name="quantidade" required />
-                        </Form.Group>
-
                         <div>
-                            <HooksProductsContainer />
+                            <HooksProductsContainer name="quantidade"/>
                             <CakeContainer />
                             <EstoqueContainer />
                         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { buyProducts } from '../redux';
+import { Button} from 'react-bootstrap';
 
 
 function HooksProductsContainer() {
@@ -8,8 +9,8 @@ function HooksProductsContainer() {
     const dispatch = useDispatch()
     return (
         <>
-            <h2>Quantidade: {quantidade}</h2>
-            <button onClick={() => dispatch(buyProducts())}>Adicionar</button>
+            <h3 className="py-2">Quantidade: {quantidade}</h3>
+            <Button onClick={() => dispatch(buyProducts())} className="rounded-pill btn-info w-25">Adicionar</Button>
         </>
     )
 }

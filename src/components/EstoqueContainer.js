@@ -1,13 +1,14 @@
 import React from 'react';
 import { conferirEstoque } from '../redux';
 import { connect } from 'react-redux';
+import { Button} from 'react-bootstrap';
 
 
 function EstoqueContainer(props) {
     return (
         <div>
-            <h2>Estoque {props.estoqueDeProdutos}</h2>
-            <button onClick={props.conferirEstoque}>Verificar Estoque</button>
+            <h5>Estoque: {props.estoqueDeProdutos} Unidades disponíveis</h5>
+            <Button onClick={props.conferirEstoque} className="rounded-pill btn-info w-25">Verificar Estoque</Button>
         </div>
     )
 }

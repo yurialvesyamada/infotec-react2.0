@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
  function CakeContainer(props) {
     return (
         <div>
-            <h6>Pedidos Efetuados {props.quantidade}</h6>
+            <h6 className="py-3">Pedidos efetuados: {props.quantidade}</h6>
             {/* <button onClick={props.buyProducts}>Remover</button> */}
         </div>
     )

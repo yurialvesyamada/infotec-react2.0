@@ -1,7 +1,7 @@
 import { ESTOQUE } from './estoqueTypes';
 
 const initialState = {
-    estoqueDeProdutos: 20
+    estoqueDeProdutos:20
 }
 
 const estoqueReducer = (state = initialState, action) => {
