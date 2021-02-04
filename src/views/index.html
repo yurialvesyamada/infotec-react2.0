@@ -11,27 +11,48 @@
     <title>Python</title>
 </head>
 
-<body>
-    <div class="bg-light p-5 text-info text-center" style="height: 100vh">
-        <div class="container bg-light w-50">
+<body class="bg-light">
+    <div class="p-5 text-info text-center">
+        <div class="container w-50">
 
             <form action="" method="POST" class="border p-5 rounded shadow-sm">
-                <p class="display-5">Calculadora</p>
+                <p class="display-5"><i class="fas fa-calculator"></i> Calculadora</p>
                 <input type="number" name="num1" id="num1" class="form-control my-4" placeholder="Digite um numero"
                     required min=0>
                 <input type="number" name="num2" id="num2" class="form-control my-4" placeholder="Digite um numero"
                     required min=0>
 
-                <button class="btn btn-danger w-25 m-4" type="reset">Apagar</button>
-                <button class="btn btn-success w-25 m-4">Enviar</button>
+                <input type="radio" name="opc" id="soma" value="soma" checked>
+                <label for="soma" class="p-3">Soma</label>
+
+                <input type="radio" name="opc" id="subt" value="subt">
+                <label for="subt" class="p-3">Subtrair</label>
+
+                <input type="radio" name="opc" id="mult" value="mult">
+                <label for="mult" class="p-3">Multiplicação</label>
+
+                <input type="radio" name="opc" id="divi" value="divi">
+                <label for="divi" class="p-3">Divisão</label>
+
+                <button class="btn btn-danger w-25 m-5" type="reset">Apagar</button>
+                <button class="btn btn-success w-25 m-5">Enviar</button>
             </form>
         </div>
+        <div class="container my-4">
+            <h1 class="display-5 py-4">Tecnologias Utilizadas</h1>
 
+            <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fab fa-html5 fa-7x px-4 text-danger"></i></a>
 
+            <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fab fa-python fa-7x px-4 text-primary"></i></a>
 
+            <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fab fa-bootstrap fa-7x px-4 text-info"></i></a>
+
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-7x px-4 text-dark"></i></a>
+        </div>
     </div>
-
-
 </body>
 
 </html>
