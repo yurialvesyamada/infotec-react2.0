@@ -1,7 +1,15 @@
-import Carouselhome from '../../components/carousel/index';
+/* import Carouselhome from '../../components/carousel/index'; */
+import Loading from '../../components/loading/index';
+import { lazy, Suspense } from 'react';
+
+const Carouselhome = lazy(() => import('../../components/carousel/index'));
 
 export default function Home() {
     return (
-        <Carouselhome />
+        <>
+            <Suspense fallback={<Loading />}>
+                <Carouselhome />
+            </Suspense>
+        </>
     )
-}
+}   
