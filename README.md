@@ -1,10 +1,8 @@
 # InfoTec
 
-## Entrega do Projeto Prático Individual de React.JS Back Intermediário
+## Projeto Prático React Front Avançado
 
-Olá, Cavaleiro(a) Jedi,
+Olá, Mestre Jedi!
 A sua missão neste conteúdo será:
 
-Instalar a biblioteca React Redux no projeto.
-Criar Action e Reducer (ao menos 2 actions com os seus reducers).
-Criar Evento de acionamento das Actions (disparo para acionamento de 2 actions criadas, atualizando o componente envolvido).
+Realizar o refactory (reconstrução) do projeto substituindo o import comum de pelo menos 3 (três) componentes por implementação de Code Splitting e Lazy Loading.
