@@ -3,6 +3,8 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Routes from './routes';
 
+/* Footer esta sendo renderizado pelo Servidor, SSR */
+
 function App() {
   return (
     <>
@@ -10,7 +12,7 @@ function App() {
         <div className="App">
           <Header />
           <Routes />
-          <Footer />
+          <Footer info={<> &copy; 2021 InfoTec </>} />
         </div>
       </BrowserRouter>
     </>

@@ -15,11 +15,11 @@ export default function Produtos_api() {
             <Container fluid>
                 <p className="text-center text-info h1 my-4">Produtos</p>
                 <Row>
-                    <Col lg={2}>
+                    <Col sm={4} md={3} lg={2}>
                         <Categorias />
                     </Col>
 
-                    <Col lg={10} className="px-5">
+                    <Col sm={8} md={9} lg={10} className="px-5">
                         <Suspense fallback={<Loading />}>
                             <Produtos />
                         </Suspense>

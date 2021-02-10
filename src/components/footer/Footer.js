@@ -2,8 +2,9 @@ import { Container, Row, Col, Image, } from 'react-bootstrap';
 import './Footer.css';
 import logo from '../../assets/img/infotec-logo.png';
 
+/* Footer esta sendo renderizado pelo Servidor, SSR */
 
-export default function Footer() {
+export default props => {
     return (
 
         <>
@@ -63,7 +64,7 @@ export default function Footer() {
                 </Container>
             </footer>
             <div className="bg-dark text-center text-white py-2 font" title="&copy; 2020 InfoTec">
-                &copy; 2020 InfoTec
+                {props.info}
             </div>
         </>
 
