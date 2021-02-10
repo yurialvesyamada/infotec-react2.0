@@ -16,7 +16,7 @@ export default function Cards(props) {
                         <img src={require(`../../../src/assets/img/${props.imagem}`).default} alt="Imagem de Produtos" className="card-img-top w-75 my-2" title={props.nome} />
                         <Card.Body>
 
-                            <img src={stars} title="Conferir avaliações" className="w-50 mb-3" />
+                            <img src={stars} title="Conferir avaliações" className="w-50 mb-3" alt="Avaliações" />
 
                             <p className="card-text" className="nome-prod" className="h5">
                                 {props.nome}

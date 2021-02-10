@@ -43,18 +43,18 @@ export default function Footer() {
                                     <a href="/faleconosco">Fale Conosco</a>
                                 </li>
                                 <li>
-                                    <a href="/parceiros">Parceiros</a>
+                                    <a href="/curiosidades">Tecnologias</a>
                                 </li>
                             </ul>
                         </Col>
 
                         <Col className="m-auto" sm={12} md={3} lg={3}>
                             <div>
-                                <a href="https://github.com/yurialvesyamada/infotec-react2.0/tree/redux" target="_blank" title="GitHub" className="github"><i
+                                <a href="https://github.com/yurialvesyamada/infotec-react2.0/tree/redux" target="_blank" rel="noopener noreferrer" title="GitHub" className="github"><i
                                     className="fa fa-3x mx-2 fa-github text-light"></i></a>
-                                <a href="#" target="_blank" title="Linkedin" className="linkedin"><i
+                                <a href="/#" target="_blank" rel="noopener noreferrer" title="Linkedin" className="linkedin"><i
                                     className="fa fa-3x mx-2 fa-linkedin text-light"></i></a>
-                                <a href="https://www.facebook.com/yuri.alvesyamada/" target="_blank" title="Facebook" className="facebook"><i
+                                <a href="https://www.facebook.com/yuri.alvesyamada/" target="_blank" rel="noopener noreferrer" title="Facebook" className="facebook"><i
                                     className="fa fa-3x mx-2 fa-facebook text-light"></i></a>
                             </div>
                         </Col>

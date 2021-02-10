@@ -4,7 +4,7 @@ import Produtos from './pages/Produtos/index';
 import Loja from './pages/Loja/index';
 import Contato from './pages/Contato/index';
 import Pedidos from './pages/Pedidos/index';
-import Parceiros from './pages/Parceiros/index';
+import Tecnologias from './pages/Tecnologias/index';
 
 function Routes() {
     return (
@@ -14,7 +14,7 @@ function Routes() {
             <Route exact path="/faleconosco" component={Contato} />
             <Route exact path="/loja" component={Loja} />
             <Route exact path="/pedidos" component={Pedidos} />
-            <Route exact path="/parceiros" component={Parceiros} />
+            <Route exact path="/curiosidades" component={Tecnologias} />
         </Switch>
     );
 }
