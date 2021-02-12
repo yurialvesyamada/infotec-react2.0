@@ -10,10 +10,28 @@ const Users = new Schema({
         type: String,
         required: true
     },
-    senha: {
+    senha: {               /* senha = telefone*/
+        type: String,
+        required: true
+    },
+    telefone: {               
+        type: Number,
+        required: true
+    },
+    tema: {
+        type: String,
+        required: true
+    },
+    mensagem: {
         type: String,
         required: true
     }
-})
 
+})
 mongoose.model('usuarios', Users)
+
+
+/*
+
+
+*/

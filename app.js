@@ -26,7 +26,10 @@ app.post('/usuarios', async (req, res) => {
         const newUser = new Users({
             nome: req.body.nome,
             email: req.body.email,
-            senha: req.body.senha
+            senha: req.body.senha,
+            telefone: req.body.telefone,
+            tema: req.body.tema,
+            mensagem: req.body.mensagem,
         });
 
         bcrypt.genSalt(10, (error, salt) => {
@@ -55,6 +58,9 @@ app.put('/usuarios/:id', async (req, res) => {
     usuario.nome = req.body.nome
     usuario.email = req.body.email
     usuario.senha = req.body.senha
+    usuario.telefone = req.body.telefone
+    usuario.tema = req.body.tema
+    usuario.mensagem = req.body.mensagem
     usuario.save()
     res.json({ message: "Usuario alterado.", usuario: usuario })
 })
