@@ -15,7 +15,7 @@ const Users = new Schema({
         required: true
     },
     telefone: {               
-        type: Number,
+        type: String,
         required: true
     },
     tema: {

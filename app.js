@@ -2,7 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const bcrypt = require('bcryptjs');
+cors = require('cors');
 
+app.use(cors());
 app.use(express.json())
 
 require('./src/models/User');
@@ -72,6 +74,6 @@ app.delete('/usuarios/:id', async (req, res) => {
     res.json({ message: "Usuario deletado com sucesso.", usuario: usuario })
 });
 
-app.listen(4000, function () {
+app.listen(5000, function () {
     console.log("Servidor Ativo com Sucesso!");
 });
