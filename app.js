@@ -77,5 +77,3 @@ app.delete('/usuarios/:id', async (req, res) => {
 app.listen(5000, function () {
     console.log("Servidor Ativo com Sucesso!");
 });
-
-/* Terminar */
