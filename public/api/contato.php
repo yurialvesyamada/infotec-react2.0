@@ -1,7 +1,7 @@
 <?php require('./connection.php') ?>
 
 <?php
-if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['tema']) && isset($_POST['mensagem'])) {
+/* if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['tema']) && isset($_POST['mensagem'])) {
 
     $nome = $_POST['nome'];
     $email = $_POST['email'];
@@ -17,6 +17,6 @@ if ($conn->query($sql) === TRUE) {
     echo "Comentario Registrado!";
 } else {
     echo "Erro: " . $sql . "<br>" . $conn->error;
-}
+} */
 ?>
 
