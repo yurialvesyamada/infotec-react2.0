@@ -1,16 +1,20 @@
 import React from "react";
 import { View } from "react-native";
 import TextCenter from "../components/TextCenter";
-
 import Button from '../components/Button'
 
-const TelaA = (props) => {
+
+const Home = (props) => {
   return (
     <View style={{ flex: 1 }}>
       {/* <Button navigation={props.navigation}/> */}
-      <TextCenter text="Tela A" />
+      <TextCenter text="Home" />
     </View>
   );
 };
 
-export default TelaA;
+export default Home;
+
+/*  
+  TELA A = Home
+*/

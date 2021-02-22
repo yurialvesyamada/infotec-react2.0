@@ -1,23 +1,23 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
-import TelaA from '../Views/TelaA'
-import TelaB from '../Views/TelaB'
-import TelaC from '../Views/TelaC'
+import Home from '../Views/Home'
+import Produtos from '../Views/Produtos'
+import Contato from '../Views/Contato'
 
 const routeTab = createBottomTabNavigator()
 
 const Tab = () => {
   return (
-    <routeTab.Navigator initialRouteName='TelaA' tabBarOptions={{
+    <routeTab.Navigator initialRouteName='Home' tabBarOptions={{
       activeTintColor: 'red',
       inactiveTintColor: 'blue',
       labelStyle: {fontSize: 30},
       
     }}>
-      <routeTab.Screen name="TelaA" component={TelaA}/>
-      <routeTab.Screen name="TelaB" component={TelaB}/>
-      <routeTab.Screen name="TelaC" component={TelaC}/>
+      <routeTab.Screen name="Home" component={Home}/>
+      <routeTab.Screen name="Produtos" component={Produtos}/>
+      <routeTab.Screen name="Contato" component={Contato}/>
     </routeTab.Navigator>
   )
 }
