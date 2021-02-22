@@ -4,7 +4,6 @@ import { NavigationContainer } from '@react-navigation/native'
 import Drawer from './Drawer'
 import Tab from './Tab'
 
-
 const Routes = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>

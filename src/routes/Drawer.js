@@ -1,6 +1,5 @@
 import React from 'react'
 import { createDrawerNavigator } from '@react-navigation/drawer'
-
 import Home from '../Views/Home'
 import Produtos from '../Views/Produtos'
 import Contato from '../Views/Contato'
@@ -18,3 +17,4 @@ const Drawer = () => {
 }
 
 export default Drawer
+
