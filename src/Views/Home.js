@@ -1,12 +1,12 @@
 import React from "react";
-import { StyleSheet, Image, View, Text } from 'react-native';
+import { StyleSheet, Image, View, Text, ScrollView } from 'react-native';
 import Slides from '../components/Slides';
 
 const Home = (props) => {
   return (
-    <View>
+    <ScrollView>
       <Slides />
-    </View>
+    </ScrollView>
 
   );
 };
