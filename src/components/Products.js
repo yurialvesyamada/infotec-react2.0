@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
-import { color } from "react-native-reanimated";
+import Pay from '../components/Pagamento';
 
 export default function Products() {
     return (
@@ -178,7 +178,7 @@ export default function Products() {
                 </View>
 
 
-
+                <Pay />
             </View>
         </>
     )

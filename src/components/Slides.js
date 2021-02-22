@@ -1,16 +1,16 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { ScrollView, Text, StyleSheet, Image } from "react-native";
 
 export default function Slide({ data }) {
     return (
-        <View>
+        <ScrollView>
             <Image
                 source={{
                     uri: 'https://github.com/yurialvesyamada/infotec-react2.0/blob/redux/src/components/carousel/img-carousel/core-i9.jpg?raw=true'
                 }}
                 style={slides.images}
             ></Image>
-            <Text style={slides.container}>Processador Intel Core i9</Text>
+            <Text style={slides.container}>Processadores Intel Core i9</Text>
             <Image
                 source={{
                     uri: 'https://github.com/yurialvesyamada/infotec-react2.0/blob/redux/src/components/carousel/img-carousel/amd.jpg?raw=true'
@@ -25,19 +25,21 @@ export default function Slide({ data }) {
                 style={slides.images}
             ></Image>
             <Text style={slides.container}>Processadores Intel de 10º Gen</Text>
-        </View>
+        </ScrollView>
     );
 }
 
 const slides = StyleSheet.create({
     container: {
-        backgroundColor: 'steelblue',
+        backgroundColor: '#17a2b8',
         alignItems: 'center',
         textAlign: 'center',
         color: 'whitesmoke',
+        padding: 5
     },
     images: {
-        height: 190,
+        width: '100%',
+        height: 370,
         alignItems: 'center'
     }
 })

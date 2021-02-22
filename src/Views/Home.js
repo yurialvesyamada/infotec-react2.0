@@ -4,9 +4,9 @@ import Slides from '../components/Slides';
 
 const Home = (props) => {
   return (
-    <ScrollView>
+    <>
       <Slides />
-    </ScrollView>
+    </>
 
   );
 };
