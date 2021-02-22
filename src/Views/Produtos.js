@@ -1,15 +1,13 @@
 import React from "react";
 import { View, Text } from "react-native";
+import Products from '../components/Products';
 
-
-const Products = (props) => {
+const Produtos = (props) => {
   return (
-    <View /* style={{ flex: 1 }} */>
-      {/* <Button navigation={props.navigation} /> */}
-     {/*  <TextCenter text="Produtos" /> */}
-      <Text>Hello</Text>
-    </View>
+    <>
+      <Products />
+    </>
   );
 };
 
-export default Products;
+export default Produtos;

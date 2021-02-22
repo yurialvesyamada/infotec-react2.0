@@ -18,14 +18,14 @@ const navbar = StyleSheet.create({
   container: {
     justifyContent: 'center',
     backgroundColor: "#17a2b8",
-    paddingVertical: 60,
-    paddingHorizontal: 20
+    paddingVertical: 20,
+    paddingHorizontal: 20,
   },
 
   logo: {
     width: 50,
     height: 50,
-    borderRadius: 8,
+    borderRadius: 6,
   },
 })
 

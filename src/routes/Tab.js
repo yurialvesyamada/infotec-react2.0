@@ -9,7 +9,7 @@ const routeTab = createBottomTabNavigator()
 const Tab = () => {
   return (
     <routeTab.Navigator initialRouteName='Home' tabBarOptions={{
-      activeTintColor: 'dark',
+      activeTintColor: 'black',
       /* inactiveTintColor: 'blue', */
       labelStyle: { fontSize: 22 },
 
