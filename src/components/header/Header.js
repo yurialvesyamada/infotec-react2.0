@@ -11,13 +11,14 @@ function BaseMenu(props) {
             <Navbar.Brand as={Link} to="/">
                 <Image
                     src={logo}
-                    className="d-inline-block w-25 shadow-sm rounded"
+                    className="shadow-sm rounded"
                     alt="Infotec" title="© 2020 Copyright InfoTec"
+                    width="80px"
                 />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav activeKey={location.pathname} className="ml-auto mr-3">
+                <Nav activeKey={location.pathname}>
                     <Nav.Item>
                         <Nav.Link as={Link} href="/" to="/">Página Inicial</Nav.Link>
                     </Nav.Item>
