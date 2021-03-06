@@ -1,4 +1,5 @@
 import { Container, Row, Col, Image, } from 'react-bootstrap';
+import { Link, withRouter } from 'react-router-dom';
 import './Footer.css';
 import logo from '../../assets/img/infotec-logo.png';
 
@@ -10,22 +11,22 @@ export default function Footer() {
             <Container className="bg-dark text-white py-5 link-white" fluid>
                 <Row className="text-center">
                     <Col className="my-auto" sm={4} md={3} lg={3} xs={12}>
-                        <a href="/">
-                            <Image src={logo} title="© 2020 InfoTec" className="w-50 shadow-sm rounded sm-w-25" fluid />
-                        </a>
+                        <Link to="/infotec-react2.0">
+                            <Image src={logo} title="© 2020 InfoTec" className="w-50 shadow-sm rounded" fluid />
+                        </Link>
                     </Col>
 
                     <Col className="my-auto" sm={4} md={3} lg={3} xs={12}>
-                        <div className="h2 pb-3">Explorar Paginas</div>
+                        <div className="h2 pb-3">Explorar Páginas</div>
                         <ul>
                             <li className="my-1">
-                                <a href="/">Pagina Inicial</a>
+                                <Link to="/infotec-react2.0">Pagina Inicial</Link>
                             </li>
                             <li className="my-1">
-                                <a href="/produtos">Produtos</a>
+                                <Link to="/produtos">Produtos</Link>
                             </li>
                             <li className="my-1">
-                                <a href="/pedidos">Carrinho</a>
+                                <Link to="/pedidos">Carrinho</Link>
                             </li>
                         </ul>
                     </Col>
@@ -36,13 +37,13 @@ export default function Footer() {
                         <div className="h2 pb-3">Sobre Nós</div>
                         <ul>
                             <li className="my-1">
-                                <a href="/loja">Nossas Lojas</a>
+                                <Link to="/loja">Nossas Lojas</Link>
                             </li>
                             <li className="my-1">
-                                <a href="/faleconosco">Fale Conosco</a>
+                                <Link to="/faleconosco">Fale Conosco</Link>
                             </li>
                             <li className="my-1">
-                                <a href="/parceiros">Parceiros</a>
+                                <Link to="/parceiros">Parceiros</Link>
                             </li>
                         </ul>
                     </Col>
@@ -59,8 +60,7 @@ export default function Footer() {
                     </Col>
                 </Row>
             </Container>
-            <footer className="bg-dark text-center text-white py-3" title="&copy; 2020 InfoTec">
-                {/*  <hr className="style-lines bg-light" /> */}
+            <footer className="text-center text-white py-3" title="&copy; 2020 InfoTec" style={{backgroundColor: '#111'}}>
                 &copy; 2020 InfoTec. Todos os Direitos Reservados.
             </footer>
         </>

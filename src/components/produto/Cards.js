@@ -28,7 +28,7 @@ export default function Cards(props) {
                                 R$ {props.preco_final}
                             </p>
 
-                            <Button className="btn-block my-3 shadow-sm" variant="outline-info" href="/pedidos"><i className="fas fa-shopping-cart"></i> Comprar</Button>
+                            <Button className="btn-block my-3 shadow-sm" variant="outline-info" href="/pedidos"><i className="fa fa-shopping-cart"></i> Comprar</Button>
                         </Card.Body>
 
 

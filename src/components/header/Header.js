@@ -7,6 +7,7 @@ import logo from '../../assets/img/infotec-logo.png';
 function BaseMenu(props) {
     const { location } = props;
     return (
+        
         <Navbar className="navbar-dark" bg="dark" expand="lg">
             <Navbar.Brand as={Link} to="/">
                 <Image
@@ -20,19 +21,19 @@ function BaseMenu(props) {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav activeKey={location.pathname}>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/" to="/">Página Inicial</Nav.Link>
+                        <Nav.Link as={Link} to="/infotec-react2.0">Página Inicial</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/produtos" to="/produtos">Produtos</Nav.Link>
+                        <Nav.Link as={Link} to="/produtos">Produtos</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/faleconosco" to="/faleconosco" >Fale Conosco</Nav.Link>
+                        <Nav.Link as={Link} to="/faleconosco" >Fale Conosco</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/pedidos" to="/pedidos">Pedidos</Nav.Link>
+                        <Nav.Link as={Link} to="/pedidos">Pedidos</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/loja" to="/loja">Nossas Lojas</Nav.Link>
+                        <Nav.Link as={Link} to="/loja">Nossas Lojas</Nav.Link>
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
