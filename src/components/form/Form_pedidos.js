@@ -4,10 +4,10 @@ import { Form, Button, Container } from 'react-bootstrap';
 import '../footer/Footer.css';
 import { Provider } from 'react-redux';
 import store from '../../redux/store';
-import CakeContainer from '../CakeContainer';
+/* import CakeContainer from '../CakeContainer';
 import HooksProductsContainer from '../HooksProductsContainer';
 import EstoqueContainer from '../EstoqueContainer';
-
+ */
 
 
 class FormPedidos extends Component {
@@ -41,11 +41,11 @@ class FormPedidos extends Component {
                             </Form.Control>
                         </Form.Group>
 
-                        <div>
+                        {/* <div>
                             <HooksProductsContainer name="quantidade"/>
                             <CakeContainer />
                             <EstoqueContainer />
-                        </div>
+                        </div> */}
                         <Button as="input" type="reset" value="Limpar" className="btn btn-info w-25 mx-5 mt-4" />
                         <Button as="input" type="submit" value="Enviar" className="btn btn-info w-25 mx-5 mt-4" />{' '}
                     </Form>

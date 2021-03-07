@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { buyProducts } from '../redux';
-import { Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 
 function HooksProductsContainer() {
@@ -19,4 +19,3 @@ export default HooksProductsContainer;
 
 
 
-/* HooksCakeContainer = HooksProductsContainer */

@@ -1,7 +1,7 @@
 import React from 'react';
 import { conferirEstoque } from '../redux';
 import { connect } from 'react-redux';
-import { Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 
 function EstoqueContainer(props) {
@@ -26,9 +26,3 @@ const mapDispatchToProps = dispatch => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(EstoqueContainer)
-
-
-/*
-   iceCreamContainer = EstoqueContainer
-
-*/
