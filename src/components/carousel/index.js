@@ -1,8 +1,9 @@
-import { Carousel, Image } from 'react-bootstrap';
+import { Carousel, Container, Image } from 'react-bootstrap';
 import amd from './img-carousel/amd.jpg';
 import corei9 from './img-carousel/core-i9.jpg';
-import intel from './img-carousel/9-gen-intel.png';
+import kitgamer from './img-carousel/kit-gamer.png';
 import './carousel.css';
+import { Link } from 'react-router-dom';
 
 export default function Carouselhome() {
 
@@ -10,7 +11,7 @@ export default function Carouselhome() {
 
         <>
             <Carousel>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={1500}>
                     <Image
                         className="d-block w-100"
                         src={corei9}
@@ -23,7 +24,7 @@ export default function Carouselhome() {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={1500}>
                     <Image
                         className="d-block w-100"
                         src={amd}
@@ -35,15 +36,24 @@ export default function Carouselhome() {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item interval={1000}>
-                    <Image
-                        className="d-block w-100"
-                        src={intel}
-                        alt="Third slide"
-                    />
+                <Carousel.Item interval={1500}>
+                    <Container className="mx-auto align-items-center" fluid>
+                        <Image
+                            className="d-block w-100"
+                            src={kitgamer}
+                            alt="Third slide"
+                            style={{ 'height': '32rem' }}
+
+                        />
+                    </Container>
                     <Carousel.Caption className="justify-content-center d-none d-md-block color-dark p-2 rounded border">
-                        <h1> 9th Gen Intel® Core</h1>
-                        <h6>Introducing the NEW 9th Gen Intel® Core™ desktop processors - the most powerful generation of Intel® Core™ desktop processors.</h6>
+                        <h1> Computadores Gamer</h1>
+                        <h6>PCs Gamer das mais renomadas marcas do mercado com preços incríveis e de ultima geração.
+                       </h6>
+                        <h6 className="my-3">Cupom de Desconto: 
+                        <Link to="/produtos"> @INFOTECGAMERS</Link>
+                        </h6>
+
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

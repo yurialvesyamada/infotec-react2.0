@@ -13,8 +13,9 @@ export default function FaleConosco() {
 
 
         <>
-            <Container className="rounded font w-50 shadow-sm my-4 border">
-                <Form className="py-5" method="POST" action={caminho + "/api/contato.php"}>
+            <Container className="font shadow-sm border text-center rounded col-md-6">
+
+                <Form className="my-5" method="POST" action={caminho + "/api/contato.php"}>
 
                     <Form.Group controlId="exampleForm.ControlInput1" className="h5">
                         <Form.Label>Nome Completo</Form.Label>

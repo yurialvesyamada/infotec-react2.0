@@ -1,5 +1,5 @@
 import { Container, Row, Col, Image, } from 'react-bootstrap';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../../assets/img/infotec-logo.png';
 
@@ -8,8 +8,8 @@ export default function Footer() {
     return (
 
         <>
-            <Container className="bg-dark text-white py-5 link-white" fluid>
-                <Row className="text-center">
+            <Container className="bg-dark text-white link-white" fluid>
+                <Row className="text-center" style={{'height': '22rem'}}>
                     <Col className="my-auto" sm={4} md={3} lg={3} xs={12}>
                         <Link to="/">
                             <Image src={logo} title="© 2020 InfoTec" className="w-50 shadow-sm rounded" fluid />
