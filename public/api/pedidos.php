@@ -1,7 +1,5 @@
-<!-- Corrigir problema nessa página com URGÊNCIA -->
-<?php require('./connection.php') ?>
+<?php require('./connection.php'); 
 
-<?php
 $nome_cliente = $_POST['nome_cliente'];
 $endereco = $_POST['endereco'];
 $telefone = $_POST['telefone'];
@@ -13,10 +11,8 @@ $sql = "INSERT INTO pedidos (nome_cliente, endereco, telefone, descricao, quanti
 
 if ($conn->query($sql) === TRUE) {
     echo "Pedido recebido!";
+    header("Refresh: 0;url=http://localhost:3000/pedidos");
+
 } else {
     echo "Erro: " . $sql . "<br>" . $conn->error;
 }
-
-?>
-
-<!-- Corrigir problema nessa página com URGÊNCIA -->
