@@ -5,6 +5,7 @@ import FormRecebePedidos from '../../components/form/Form_recebepedidos';
 
 
 class Pedido extends Component {
+    
     state = {
         produto: [],
         pedidos: []

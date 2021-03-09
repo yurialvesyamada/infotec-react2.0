@@ -10,11 +10,10 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
 
     $sql = "insert into comentarios (nome, email, telefone, tema, mensagem) values ('$nome', '$email', '$telefone', '$tema', '$mensagem')";
     $result = $conn->query($sql);
-
-    header("Refresh: 0;url=http://localhost:3000/infotec-react2.0");
 }
 
 if ($conn->query($sql) === TRUE) {
+    header("Refresh: 0;url=$router");
     echo "Comentario Registrado!";
 } else {
     echo "Erro: " . $sql . "<br>" . $conn->error;

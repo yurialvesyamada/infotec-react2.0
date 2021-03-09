@@ -11,7 +11,7 @@ export default function Footer() {
             <Container className="bg-dark text-white py-5 link-white" fluid>
                 <Row className="text-center">
                     <Col className="my-auto" sm={4} md={3} lg={3} xs={12}>
-                        <Link to="/infotec-react2.0">
+                        <Link to="/">
                             <Image src={logo} title="© 2020 InfoTec" className="w-50 shadow-sm rounded" fluid />
                         </Link>
                     </Col>
@@ -20,7 +20,7 @@ export default function Footer() {
                         <div className="h2 pb-3">Explorar Páginas</div>
                         <ul>
                             <li className="my-1">
-                                <Link to="/infotec-react2.0">Pagina Inicial</Link>
+                                <Link to="/">Página Inicial</Link>
                             </li>
                             <li className="my-1">
                                 <Link to="/produtos">Produtos</Link>

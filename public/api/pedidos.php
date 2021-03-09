@@ -10,8 +10,8 @@ $produto = $_POST['produto'];
 $sql = "INSERT INTO pedidos (nome_cliente, endereco, telefone, descricao, quantidade, produto) values ('$nome_cliente', '$endereco', '$telefone', '$descricao', '$quantidade', '$produto')";
 
 if ($conn->query($sql) === TRUE) {
+    header("Refresh: 0;url=$router");
     echo "Pedido recebido!";
-    header("Refresh: 0;url=http://localhost:3000/pedidos");
 
 } else {
     echo "Erro: " . $sql . "<br>" . $conn->error;

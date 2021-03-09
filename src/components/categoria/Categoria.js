@@ -3,7 +3,7 @@ import { Row } from 'react-bootstrap';
 export default function Categorias() {
     return (
         <div>
-            <Row>
+            <Row sm={8} md={8}>
                 <div className="bg-info text-white rounded shadow">
                     <div className="produtos p-4">
                         <p className="text-center my-4 h1">Categorias</p>

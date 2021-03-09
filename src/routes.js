@@ -9,7 +9,7 @@ import Parceiros from './pages/Parceiros/index';
 function Routes() {
     return (
         <Switch>
-            <Route exact path="/infotec-react2.0" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/produtos" component={Produtos} />
             <Route exact path="/faleconosco" component={Contato} />
             <Route exact path="/loja" component={Loja} />

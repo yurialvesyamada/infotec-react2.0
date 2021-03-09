@@ -1,5 +1,5 @@
 const initialState = {
-    /* caminho: "" */
+   /*  caminho: "" */
 
     caminho: "http://localhost/react-redux-project/public"
 

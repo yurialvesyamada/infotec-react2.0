@@ -21,7 +21,7 @@ function BaseMenu(props) {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav activeKey={location.pathname}>
                     <Nav.Item>
-                        <Nav.Link as={Link} to="/infotec-react2.0">Página Inicial</Nav.Link>
+                        <Nav.Link as={Link} to="/">Página Inicial</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link as={Link} to="/produtos">Produtos</Nav.Link>

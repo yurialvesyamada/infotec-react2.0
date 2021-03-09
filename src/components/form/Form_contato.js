@@ -1,15 +1,20 @@
 import { Container, Form, Button } from 'react-bootstrap';
 import '../footer/Footer.css';
+import { useSelector } from 'react-redux';
+import { useState, useEffect } from 'react';
+
 
 export default function FaleConosco() {
 
 
+    const caminho = useSelector(state => state.caminho.caminho)
 
     return (
 
+
         <>
             <Container className="rounded font w-50 shadow-sm my-4 border">
-                <Form className="py-5" method="POST" action="http://localhost/react-redux-project/public/api/contato.php">
+                <Form className="py-5" method="POST" action={caminho + "/api/contato.php"}>
 
                     <Form.Group controlId="exampleForm.ControlInput1" className="h5">
                         <Form.Label>Nome Completo</Form.Label>
