@@ -32,17 +32,17 @@ export default function Carouselhome() {
                     />
                     <Carousel.Caption className="justify-content-center d-none d-md-block color-dark p-2 rounded border">
                         <h1>AMD Ryzen</h1>
-                        <h6>Processadores para desktop AMD Ryzen™ da série 5000 estão aqui.</h6>
+                        <h6>Processadores para desktop AMD Ryzen™ da série 5000 já estão aqui.</h6>
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item interval={1500}>
-                    <Container className="mx-auto align-items-center" fluid>
+                <Carousel.Item interval={1500000} className="bg-dark">
+                    <Container className="mx-auto align-items-center">
                         <Image
-                            className="d-block w-100"
+                            className="d-block w-100 rounded shadow-sm border"
                             src={kitgamer}
                             alt="Third slide"
-                            style={{ 'height': '32rem' }}
+
 
                         />
                     </Container>
@@ -50,7 +50,7 @@ export default function Carouselhome() {
                         <h1> Computadores Gamer</h1>
                         <h6>PCs Gamer das mais renomadas marcas do mercado com preços incríveis e de ultima geração.
                        </h6>
-                        <h6 className="my-3">Cupom de Desconto: 
+                        <h6 className="my-3">Cupom de Desconto:
                         <Link to="/produtos"> @INFOTECGAMERS</Link>
                         </h6>
 

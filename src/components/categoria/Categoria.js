@@ -2,9 +2,9 @@ import { Row } from 'react-bootstrap';
 
 export default function Categorias() {
     return (
-        <div>
-            <Row sm={8} md={8}>
-                <div className="bg-info text-white rounded shadow">
+        <>
+            <Row sm={12} md={12}>
+                <div className="bg-info text-white rounded shadow w-100">
                     <div className="produtos p-4">
                         <p className="text-center my-4 h1">Categorias</p>
                         <div className="p-lists">
@@ -86,6 +86,6 @@ export default function Categorias() {
                 </div>
             </Row>
 
-        </div>
+        </>
     );
 }

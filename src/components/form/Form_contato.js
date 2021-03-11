@@ -1,13 +1,12 @@
 import { Container, Form, Button } from 'react-bootstrap';
 import '../footer/Footer.css';
 import { useSelector } from 'react-redux';
-import { useState, useEffect } from 'react';
 
 
 export default function FaleConosco() {
 
-
     const caminho = useSelector(state => state.caminho.caminho)
+
 
     return (
 
@@ -25,11 +24,6 @@ export default function FaleConosco() {
                     <Form.Group controlId="exampleForm.ControlInput2" className="h5">
                         <Form.Label>E-mail</Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" name="email" required />
-                    </Form.Group>
-
-                    <Form.Group controlId="exampleForm.ControlInput3" className="h5">
-                        <Form.Label>Senha</Form.Label>
-                        <Form.Control type="password" placeholder="password" name="senha" required />
                     </Form.Group>
 
                     <Form.Group controlId="exampleForm.ControlInput4" className="h5">
