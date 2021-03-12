@@ -1,4 +1,4 @@
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button, Col } from 'react-bootstrap';
 import '../footer/Footer.css';
 import { useSelector } from 'react-redux';
 
@@ -47,8 +47,12 @@ export default function FaleConosco() {
                         <Form.Label>Escreva aqui</Form.Label>
                         <Form.Control as="textarea" rows={3} name="mensagem" required />
                     </Form.Group>
-                    <Button as="input" type="reset" value="Limpar" className="btn btn-info w-25 mx-5 mt-4" />
-                    <Button as="input" type="submit" value="Enviar" className="btn btn-info w-25 mx-5 mt-4" />{' '}
+                    <Col md={4} sm={6} lg={4} className="mx-auto">
+                        <Button as="input" type="reset" value="Limpar" variant="outline-info" className="w-100 mt-4" />
+                    </Col>
+                    <Col md={4} sm={6} lg={4} className="mx-auto">
+                        <Button as="input" type="submit" value="Enviar" variant="info" className="w-100 mt-4" />{' '}
+                    </Col>
                 </Form>
             </Container>
         </>

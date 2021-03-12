@@ -1,7 +1,6 @@
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import FaleConosco from '../../components/form/Form_contato';
 import Logos from '../../components/logos/Contact';
-import { Row } from 'react-bootstrap';
 
 export default function Contatos() {
     return (

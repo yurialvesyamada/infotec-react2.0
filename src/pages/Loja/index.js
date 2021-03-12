@@ -5,14 +5,11 @@ import Pagamento from '../../components/pagamento/Pagamento';
 
 export default function Contato() {
     return (
-        
- <Container className="text-center text-info">
-     <div className="h1 my-4">
-         <p>Conheça Já</p>
-     </div>
-         <Adress />
-         <Pagamento />
-     
-  </Container> 
-)
+
+        <Container className="text-center text-info bg-light" fluid>
+            <h1 className="h1 py-5">Conheça Já</h1>
+            <Adress />
+            <Pagamento />
+        </Container>
+    )
 }

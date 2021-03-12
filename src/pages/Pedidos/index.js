@@ -2,6 +2,7 @@ import FormPedidos from '../../components/form/Form_pedidos';
 import FormRecebePedidos from '../../components/form/Form_recebepedidos';
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import { Container } from 'react-bootstrap';
 
 
 export default function Pedido() {
@@ -34,11 +35,11 @@ export default function Pedido() {
 
     return (
         <>
-            <div className="text-center text-info bg-light py-4">
-                <p className="h1">Pedidos</p>
+            <Container className="text-center text-info bg-light" fluid>
+                <h1 className="h1 py-5">Pedidos</h1>
                 <FormPedidos data={produto} />
                 <FormRecebePedidos lista={pedidos} />
-            </div>
+            </Container>
         </>
     )
 }

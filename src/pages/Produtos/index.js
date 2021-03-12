@@ -9,13 +9,13 @@ export default function Produtos_api() {
     return (
 
         <>
-            <Container className="text-center style-fonts" fluid>
+            <Container className="text-center" fluid>
                 <h1 className="text-info h1 py-5">Produtos</h1>
                 <Row>
                     <Col lg={2} sm={12}>
                         <Categorias />
                     </Col>
-                    <Col lg={9} className="mx-auto">
+                    <Col lg={9} className="mx-auto style-fonts">
                         <Produtos />
                     </Col>
                 </Row>

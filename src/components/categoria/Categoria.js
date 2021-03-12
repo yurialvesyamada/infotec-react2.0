@@ -1,91 +1,44 @@
-import { Row } from 'react-bootstrap';
+import { Row, ListGroup, Container } from 'react-bootstrap';
 
 export default function Categorias() {
     return (
         <>
-            <Row sm={12} md={12}>
-                <div className="bg-info text-white rounded shadow w-100">
-                    <div className="produtos p-4">
-                        <p className="text-center my-4 h1">Categorias</p>
-                        <div className="p-lists">
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Todos</span> <span>16</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Notebooks</span> <span>8</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Placa de Vídeo</span> <span>4</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Processadores</span> <span>2</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Memória RAM</span> <span>1</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Monitores</span> <span>1</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>CPU</span> <span>Em breve</span>
-                            </div>
-
-
-                            <div className="p-2 border-top border-light">
-                                <div className="heading d-flex justify-content-between">
-                                    <p className="text-uppercase h5">Processadores</p>
-                                </div>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Intel Core i9</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Intel Core i7</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Intel Core i5</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Intel Core i3</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>AMD Ryzen 7</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>AMD Ryzen 5</span> <span>--</span>
-                            </div>
-
-                            <div className="p-2 border-top border-light">
-                                <div className="heading d-flex justify-content-between">
-                                    <p className="text-uppercase h5">Marcas</p>
-                                </div>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Acer</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Apple</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Samsung</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Lenovo</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Asus</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Sony</span> <span>--</span>
-                            </div>
-                            <div className="d-flex justify-content-between mt-2">
-                                <span>Dell</span> <span>--</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <Row>
+                <Container className="bg-info text-center rounded shadow w-100" fluid>
+                    <h2 className="py-5 h2 text-light">Categorias</h2>
+                    <ListGroup variant="flush" className="rounded">
+                        <ListGroup.Item>Todos</ListGroup.Item>
+                        <ListGroup.Item>Notebooks</ListGroup.Item>
+                        <ListGroup.Item>Processadores</ListGroup.Item>
+                        <ListGroup.Item>Placa de Vídeo</ListGroup.Item>
+                        <ListGroup.Item>Memória RAM</ListGroup.Item>
+                        <ListGroup.Item>Monitores</ListGroup.Item>
+                        <ListGroup.Item>SSD</ListGroup.Item>
+                        <ListGroup.Item>Pc Gamer</ListGroup.Item>
+                    </ListGroup>
+                    <h4 className="py-3 h4 text-light">Processadores</h4>
+                    <ListGroup variant="flush" className="rounded">
+                        <ListGroup.Item>Intel Core i9</ListGroup.Item>
+                        <ListGroup.Item>Intel Core i7</ListGroup.Item>
+                        <ListGroup.Item>Intel Core i5</ListGroup.Item>
+                        <ListGroup.Item>Intel Core i3</ListGroup.Item>
+                        <ListGroup.Item>AMD Ryzen 7</ListGroup.Item>
+                        <ListGroup.Item>AMD Ryzen 5</ListGroup.Item>
+                        <ListGroup.Item>AMD Ryzen 3</ListGroup.Item>
+                    </ListGroup>
+                    <h4 className="py-3 h4 text-light">Marcas</h4>
+                    <ListGroup variant="flush" className="rounded">
+                        <ListGroup.Item>Apple</ListGroup.Item>
+                        <ListGroup.Item>Acer</ListGroup.Item>
+                        <ListGroup.Item>Asus</ListGroup.Item>
+                        <ListGroup.Item>Samsung</ListGroup.Item>
+                        <ListGroup.Item>Lenovo</ListGroup.Item>
+                        <ListGroup.Item>Dell</ListGroup.Item>
+                        <ListGroup.Item>Sony</ListGroup.Item>
+                    </ListGroup>
+                        <br /> <br />
+                </Container>
             </Row>
-
         </>
     );
 }

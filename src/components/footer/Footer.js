@@ -9,10 +9,10 @@ export default function Footer() {
 
         <>
             <Container className="bg-dark text-white link-white py-5" fluid>
-                <Row className="text-center py-5" /* style={{'height': '22rem'}} */>
+                <Row className="text-center py-5">
                     <Col className="my-auto" sm={4} md={3} lg={3} xs={12}>
                         <Link to="/">
-                            <Image src={logo} title="© 2020 InfoTec" className="w-50 shadow-sm d-inline d-sm-none rounded pb-4" fluid />
+                            <Image src={logo} title="© 2020 InfoTec" className="w-50 shadow-sm d-inline d-sm-none rounded mb-4" fluid />
                             <Image src={logo} title="© 2020 InfoTec" className="w-50 shadow-sm d-none d-sm-inline rounded" fluid />
                         </Link>
                     </Col>
