@@ -1,4 +1,4 @@
-### InfoTec 2021
+# InfoTec 2021
 
 ## Projeto de E-commerce com produtos voltados para tecnologia iniciado durante o Recode Pro 2020, com o objetivo de desenvolver e aprimorar habilidades como Programador FullStack Júnior.
 
